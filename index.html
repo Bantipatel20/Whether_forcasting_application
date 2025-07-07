@@ -9,16 +9,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script src="index.js" ></script>.
-        {% comment %} <script src="https://cdn.tailwindcss.com"></script> {% endcomment %}
+        <link rel="stylesheet" href="styles.css"></link>
     </head>
     <body>
-        <div>
-            <h1>Whether App</h1>
-            <div>
-                
+        <div class = 'wrapper'>
+            <h1>Whether app</h1>
+            <div class='tab-container'>
+                <p class='tab' data-userwhether>Your Whether</p>
+                <p class='tab' data-searchwhether>search Whether</p>
             </div>
-        </div>
+            <div class='Whether-container'>
+                <div class='grant-location-container'>
+                    <img src='./image/location.jpeg' width="80" height='80' loading='lazy'>
+                    <p>Grant Location Access</p>
+                    <p>Access allow to get Whether Informaton </p>
+                    <button class='btn' data-grantaccess>Grant Access</button>
+                </div>
 
-        
+                <div class='form-container'>
+                    <input placeholder =  'search for city...' type='text'  data-searchinput>
+                    <button class ="btn">
+                        <img src='./image/search.jpg' width='20' height='20' loading='lazy'>
+                    </button>
+                </div>
+
+                <div class='loading-container'>
+                    <img src='./image/loading.png' width='150' height='150' >
+                    <p>Loading</p>   
+                </div>
+
+                <div class='user-info-container'>
+                    <div class='name'>
+                        <p data-cityname></p>
+                        <img data-cityicon></img>
+                    </div>
+                        <p data-Whetherdesc></p>
+                        <img data-Whethericon></img>
+                        <p data-temp></p>
+                        <div class='parameter-container'>
+                            <div class='parameter'>
+                                <img src='./image/windspeed.jpeg'>
+                                <p>WindSpeed</p>
+                                <p data-windspeed></p>
+                            </div>
+
+                            <div class='parameter'>
+                                <img src='./image/humidity.png'>
+                                <p>Humidity</p>
+                                <p data-humidity></p>
+                            </div>
+
+
+                            <div class='parameter'>
+                                <img src='./image/clouds.png'>
+                                <p>Clouds</p>
+                                <p data-clouds></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    
     </body>
 </html>
